@@ -1,0 +1,12 @@
+/* Importing theme fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+/* Setting header and body fonts to respective font family */
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+h1, h2, h3, h4, h6 {
+    font-family: 'Raleway', sans-serif;
+}
