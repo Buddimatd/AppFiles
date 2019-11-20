@@ -1,25 +1,64 @@
-.tab {
+.back {
+    background-image:
+        /* top, transparent blue */
+            linear-gradient(
+            rgb(240,240,240),
+            rgb(240,240,240),
+            rgb(240,240,240),
+            rgba(57, 178, 255, 0.7),
+            rgba(57, 178, 255, 0.9),
+            rgba(57, 178, 255, 0.95),
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1),
+            rgba(240, 240, 240, 1)),
+                /* your image */
+                /*url("http://wallpapersdsc.net/wp-content/uploads/2017/04/Tools-Download.jpg");*/
+            url("../img/toolscompsci.png");
+    height: 2125px;
+    background-repeat: no-repeat
+}
+
+.tab { /*Simple tab*/
     margin-left: 1em
 }
 
-.productImage {
+.productImage { /*This is the scaling for the product image*/
+    border: 0px solid #ddd;
+    border-radius: 1px;
+    padding: 20px;
+    width: 370px;
+    float: left;
+}
+
+.sellerRating { /*This is the seller rating stars scaled down*/
     border: 0px solid #ddd;
     border-radius: 1px;
     padding: 5px;
-    width: 450px;
+    width: 200px;
+    float: left;
+}
+
+.paymentOpt { /*This is the payment badges scaled up*/
+    border: 0px solid #ddd;
+    border-radius: 1px;
+    padding: 5px;
+    width: 250px;
     float: left;
 }
 
 
-.productDesc{
+.productDesc{ /*layout clarification of the text description*/
     clear: right;
 }
 
 
-.button {
+.button { /*Order button with a minimal animation*/
     display: inline-block;
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: limegreen;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -38,7 +77,7 @@
     transition: 0.5s;
 }
 
-.button span:after {
+.button span:after { /*Button movement*/
     content: '\00bb';
     position: absolute;
     opacity: 0;
@@ -47,13 +86,21 @@
     transition: 0.5s;
 }
 
-.button:hover span {
+.button:hover span { /*Button movement*/
     padding-right: 25px;
 }
 
-.button:hover span:after {
+.button:hover span:after { /*Button movement*/
     opacity: 1;
     right: 0;
 }
 
-#locator { position: absolute; visibility: visible; right: 100px; top: 150px; z-index: 200; }
+/*THIS ARE ALL THE LOCATOR DATA FOR DIV PLACEMENTS*/
+
+#locator { position: absolute; visibility: visible; right: 30px; top: 100px; z-index: 200; }
+
+#locatorRating { position: absolute; visibility: visible; right: 100px; top: 300px; z-index: 200; }
+
+#locatorButton { position: absolute; visibility: visible; right: 100px; top: 200px; z-index: 200; }
+
+#locatorPayment { position: absolute; visibility: visible; right: 80px; top: 350px; z-index: 200; }

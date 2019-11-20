@@ -23,7 +23,7 @@
 </head>
 
 <!-- Start of BODY -->
-<body>
+<body class="back">
 
 <!-- ELEMENT: Navigation Bar -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
@@ -74,12 +74,15 @@
     </div>
 </nav>
 
+//Creation of product page
 <div class="tab">
     <h2>Lawn Mower</h2>
 </div>
 
-<img src="lawnmower.jpg" class="productImage"/>
+//Placement of product image and also scaled to correct sizing
+<img src="lawnmower2.png" class="productImage"/>
 
+//Creation of simple text box for basic product description
 <div class="productDesc"><p>
     Ideal for revitalizing small to mid-sized lawns<br>
     Powerful 12-amp motor rakes a 13-Inch wide path to get your job done faster<br>
@@ -89,15 +92,29 @@
     Maintenance free – No gas, oil or tune-ups ; Detachable thatch collection bag for easy disposal
 </p></div>
 
+//Locator created to pinpoint position of 'Text/Note' field
 <div id="locator">
     <form>
-        Leave a note<br>
-        <input type="text" name="firstname">
-
+        <textarea rows="4" cols="50">
+Leave a note
+</textarea>
     </form>
+</div>
+
+//Locator created to pinpoint position of rating
+    <div id="locatorRating">
+    <img src="5star.png" class="sellerRating"/>
+    </div>
+
+//Locator created to pinpoint position of 'Order' button
+<div id="locatorButton">
 <button class="button" style="vertical-align:middle"><span>Order</span> </button>
 </div>
 
+//Locator created to pinpoint position of payment guarantees
+<div id="locatorPayment">
+    <img src="paymentopt.png" class="paymentOpt"/>
+</div>
 
 
 <!-- Framework JS -->
